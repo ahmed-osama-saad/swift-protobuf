@@ -18,9 +18,9 @@ import sys
 _VERSION_RE = re.compile(r'^(?P<major>\d+)\.(?P<minor>\d+)(.(?P<revision>\d+))?$')
 
 _PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-_PODSPEC_PATH = os.path.join(_PROJECT_ROOT, 'SwiftProtobuf.podspec')
+_PODSPEC_PATH = os.path.join(_PROJECT_ROOT, 'SwiftProtobufAlias.podspec')
 _VERSION_SWIFT_PATH = os.path.join(_PROJECT_ROOT, 'Sources/SwiftProtobuf/Version.swift')
-_XCCONFIG_PATH = os.path.join(_PROJECT_ROOT, 'SwiftProtobuf.xcodeproj/xcconfigs/Base.xcconfig')
+_XCCONFIG_PATH = os.path.join(_PROJECT_ROOT, 'SwiftProtobufAlias.xcodeproj/xcconfigs/Base.xcconfig')
 
 def Fail(message):
   sys.stderr.write('Error: %s\n' % message)
@@ -33,11 +33,11 @@ def ExtractVersion(s):
 
 
 def ValidateFiles():
-  # Extra from SwiftProtobuf.podspec
+  # Extra from SwiftProtobufAlias.podspec
   pod_content = open(_PODSPEC_PATH).read()
   match = re.search(r'version = \'(\d+.\d+.\d+)\'', pod_content)
   if not match:
-    Fail('Failed to extract a version from SwiftProtobuf.podspec')
+    Fail('Failed to extract a version from SwiftProtobufAlias.podspec')
   (major, minor, revision) = ExtractVersion(match.group(1))
 
   # Test Sources/SwiftProtobuf/Version.swift
@@ -49,19 +49,19 @@ def ValidateFiles():
   had_minor = minor_line in version_swift_content
   had_revision = revision_line in version_swift_content
   if not had_major or not had_minor or not had_revision:
-    Fail('Version in Sources/SwiftProtobuf/Version.swift did not match SwiftProtobuf.podspec')
+    Fail('Version in Sources/SwiftProtobuf/Version.swift did not match SwiftProtobufAlias.podspec')
 
-  # Test SwiftProtobuf.xcodeproj/xcconfigs/Base.xcconfig
+  # Test SwiftProtobufAlias.xcodeproj/xcconfigs/Base.xcconfig
   xcconfig_content = open(_XCCONFIG_PATH).read()
   current_version_line = 'CURRENT_PROJECT_VERSION = %s.%s.%s' % (major, minor, revision)
   if current_version_line not in  xcconfig_content:
-    Fail('Version in SwiftProtobuf.xcodeproj/xcconfigs/Base.xcconfig did not match SwiftProtobuf.podspec')
+    Fail('Version in SwiftProtobufAlias.xcodeproj/xcconfigs/Base.xcconfig did not match SwiftProtobufAlias.podspec')
 
 
 def UpdateFiles(version_string):
   (major, minor, revision) = ExtractVersion(version_string)
 
-  # Update SwiftProtobuf.podspec
+  # Update SwiftProtobufAlias.podspec
   pod_content = open(_PODSPEC_PATH).read()
   pod_content = re.sub(r'version = \'(\d+\.\d+\.\d+)\'',
                        'version = \'%s.%s.%s\'' % (major, minor, revision),
@@ -81,7 +81,7 @@ def UpdateFiles(version_string):
                                  version_swift_content)
   open(_VERSION_SWIFT_PATH, 'w').write(version_swift_content)
 
-  # Update SwiftProtobuf.xcodeproj/xcconfigs/Base.xcconfig
+  # Update SwiftProtobufAlias.xcodeproj/xcconfigs/Base.xcconfig
   xcconfig_content = open(_XCCONFIG_PATH).read()
   xcconfig_content = re.sub(r'CURRENT_PROJECT_VERSION = \d+\.\d+\.\d+',
                             'CURRENT_PROJECT_VERSION = %s.%s.%s' % (major, minor, revision),

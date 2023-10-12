@@ -35,7 +35,7 @@ public enum BinaryDecodingError: Error {
   case missingRequiredFields
 
   /// An internal error happened while decoding.  If this is ever encountered,
-  /// please file an issue with SwiftProtobuf with as much details as possible
+  /// please file an issue with SwiftProtobufAlias with as much details as possible
   /// for what happened (proto definitions, bytes being decoded (if possible)).
   case internalExtensionError
 

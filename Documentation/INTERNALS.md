@@ -3,9 +3,9 @@
 ---
 
 This explanation of the generated code is intended to help people understand
-the internal design of SwiftProtobuf.
+the internal design of SwiftProtobufAlias.
 In particular, people interested in helping with the development of
-SwiftProtobuf itself should probably read this carefully.
+SwiftProtobufAlias itself should probably read this carefully.
 
 Note, however, that this is not a contract:
 The details of the generated code are expected to change
@@ -33,7 +33,7 @@ When the minimum Swift version gets updated, update:
 - Audit all the `#if` directives in the code and tests that use at
   `swift(...)` to check the version being compiled against, and
   remove the ones that are no longer needed.
-- Update `Package.swift` and `SwiftProtobuf.podspec` files to list the
+- Update `Package.swift` and `SwiftProtobufAlias.podspec` files to list the
   versions supported. Eventually the version specific `Package@*.swift`
   files will go away.
 
@@ -280,7 +280,7 @@ Here is the actual first part of the generated code for `message Foo` above:
 ```swift
 public struct Foo: ProtobufGeneratedMessage {
   static let protoMessageName: String = "Foo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  static let _protobuf_nameMap: SwiftProtobufAlias._NameMap = [
     1: .same(proto: "field1"),
     2: .same(proto: "field2"),
   ]
@@ -298,7 +298,7 @@ as needed by the serialization engines in the runtime library.
 The serialization support is based on a traversal mechanism (also known as
 "The Visitor Pattern").
 The various serialization systems in the runtime library construct objects
-that conform to the `SwiftProtobuf.Visitor` protocol and then invoke
+that conform to the `SwiftProtobufAlias.Visitor` protocol and then invoke
 the `traverse()` method which will provide the visitor with a look at every
 non-empty field.
 
@@ -328,7 +328,7 @@ The storage class and the generated `traverse()` look like this:
     var _mapField: Dictionary<Int32,Bool> = [:]
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  func traverse<V: SwiftProtobufAlias.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       if _storage._field1 != 0 {
         try visitor.visitSingularInt32Field(

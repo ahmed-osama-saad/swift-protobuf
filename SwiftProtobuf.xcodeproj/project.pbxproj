@@ -123,7 +123,7 @@
 		9C84E4941E5E3ABD00513BE0 /* JSONEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84E48D1E5E3ABD00513BE0 /* JSONEncodingError.swift */; };
 		9C84E4951E5E3ABD00513BE0 /* JSONEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84E48D1E5E3ABD00513BE0 /* JSONEncodingError.swift */; };
 		9C84E4961E5E3ABD00513BE0 /* JSONEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84E48D1E5E3ABD00513BE0 /* JSONEncodingError.swift */; };
-		9C8CDA171D7A288E00E207CA /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Protobuf_iOS" /* SwiftProtobuf.framework */; };
+		9C8CDA171D7A288E00E207CA /* SwiftProtobufAlias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Protobuf_iOS" /* SwiftProtobufAlias.framework */; };
 		9C8CDA1D1D7A28F600E207CA /* any_test.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/ProtobufTests/any_test.pb.swift /* any_test.pb.swift */; };
 		9C8CDA1E1D7A28F600E207CA /* conformance.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/ProtobufTests/conformance.pb.swift /* conformance.pb.swift */; };
 		9C8CDA201D7A28F600E207CA /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/ProtobufTests/TestHelpers.swift /* TestHelpers.swift */; };
@@ -378,7 +378,7 @@
 		F44F93981DAEA76700BC5B85 /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28A4A81DA40B0900C866D9 /* Varint.swift */; };
 		F44F93991DAEA76700BC5B85 /* wrappers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA52731DA80DEA003F318F /* wrappers.pb.swift */; };
 		F44F939A1DAEA76700BC5B85 /* ZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA28A4A51DA30E5900C866D9 /* ZigZag.swift */; };
-		F44F93A41DAEA7C500BC5B85 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44F936F1DAEA53900BC5B85 /* SwiftProtobuf.framework */; };
+		F44F93A41DAEA7C500BC5B85 /* SwiftProtobufAlias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44F936F1DAEA53900BC5B85 /* SwiftProtobufAlias.framework */; };
 		F44F93AA1DAEA8C900BC5B85 /* any_test.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/ProtobufTests/any_test.pb.swift /* any_test.pb.swift */; };
 		F44F93AB1DAEA8C900BC5B85 /* conformance.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/ProtobufTests/conformance.pb.swift /* conformance.pb.swift */; };
 		F44F93AD1DAEA8C900BC5B85 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/ProtobufTests/TestHelpers.swift /* TestHelpers.swift */; };
@@ -601,7 +601,7 @@
 		F4F4F11E1E5C7562006C6CAD /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1CA0C1E54B80800CA8A26 /* MathUtils.swift */; };
 		F4F4F11F1E5C7563006C6CAD /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1CA0C1E54B80800CA8A26 /* MathUtils.swift */; };
 		F4F4F1201E5C7565006C6CAD /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1CA0C1E54B80800CA8A26 /* MathUtils.swift */; };
-		_LinkFileRef_Protobuf_via_ProtobufTestSuite /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Protobuf_macOS" /* SwiftProtobuf.framework */; };
+		_LinkFileRef_Protobuf_via_ProtobufTestSuite /* SwiftProtobufAlias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Protobuf_macOS" /* SwiftProtobufAlias.framework */; };
 		__src_cc_ref_Sources/Protobuf/Google_Protobuf_Duration_Extensions.swift /* Google_Protobuf_Duration+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Protobuf/Google_Protobuf_Duration_Extensions.swift /* Google_Protobuf_Duration+Extensions.swift */; };
 		__src_cc_ref_Sources/Protobuf/Google_Protobuf_FieldMask_Extensions.swift /* Google_Protobuf_FieldMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Protobuf/Google_Protobuf_FieldMask_Extensions.swift /* Google_Protobuf_FieldMask+Extensions.swift */; };
 		__src_cc_ref_Sources/Protobuf/Google_Protobuf_Struct.swift /* Google_Protobuf_Struct+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Protobuf/Google_Protobuf_Struct.swift /* Google_Protobuf_Struct+Extensions.swift */; };
@@ -721,16 +721,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A82E3442455D26900EB0A70 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/Base.xcconfig; sourceTree = "<group>"; };
-		5A82E3452455D26900EB0A70 /* SwiftProtobuf_watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_watchOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobuf_watchOS.xcconfig; sourceTree = "<group>"; };
-		5A82E3462455D26900EB0A70 /* SwiftProtobuf_iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_iOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobuf_iOS.xcconfig; sourceTree = "<group>"; };
-		5A82E3472455D26900EB0A70 /* SwiftProtobufTestSuite_macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobufTestSuite_macOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobufTestSuite_macOS.xcconfig; sourceTree = "<group>"; };
-		5A82E3482455D26900EB0A70 /* SwiftProtobuf_macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_macOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobuf_macOS.xcconfig; sourceTree = "<group>"; };
-		5A82E3492455D26900EB0A70 /* SwiftProtobuf_tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_tvOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobuf_tvOS.xcconfig; sourceTree = "<group>"; };
-		5A82E34A2455D26900EB0A70 /* SwiftProtobufTestSuite_tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobufTestSuite_tvOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobufTestSuite_tvOS.xcconfig; sourceTree = "<group>"; };
-		5A82E34B2455D26900EB0A70 /* SwiftProtobufTestSuite_iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobufTestSuite_iOS.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/SwiftProtobufTestSuite_iOS.xcconfig; sourceTree = "<group>"; };
-		5A82E34C2455D71400EB0A70 /* Base_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base_Debug.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/Base_Debug.xcconfig; sourceTree = "<group>"; };
-		5A82E34D2455D71400EB0A70 /* Base_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base_Release.xcconfig; path = SwiftProtobuf.xcodeproj/xcconfigs/Base_Release.xcconfig; sourceTree = "<group>"; };
+		5A82E3442455D26900EB0A70 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/Base.xcconfig; sourceTree = "<group>"; };
+		5A82E3452455D26900EB0A70 /* SwiftProtobuf_watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_watchOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobuf_watchOS.xcconfig; sourceTree = "<group>"; };
+		5A82E3462455D26900EB0A70 /* SwiftProtobuf_iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_iOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobuf_iOS.xcconfig; sourceTree = "<group>"; };
+		5A82E3472455D26900EB0A70 /* SwiftProtobufTestSuite_macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobufTestSuite_macOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobufTestSuite_macOS.xcconfig; sourceTree = "<group>"; };
+		5A82E3482455D26900EB0A70 /* SwiftProtobuf_macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_macOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobuf_macOS.xcconfig; sourceTree = "<group>"; };
+		5A82E3492455D26900EB0A70 /* SwiftProtobuf_tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobuf_tvOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobuf_tvOS.xcconfig; sourceTree = "<group>"; };
+		5A82E34A2455D26900EB0A70 /* SwiftProtobufTestSuite_tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobufTestSuite_tvOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobufTestSuite_tvOS.xcconfig; sourceTree = "<group>"; };
+		5A82E34B2455D26900EB0A70 /* SwiftProtobufTestSuite_iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SwiftProtobufTestSuite_iOS.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/SwiftProtobufTestSuite_iOS.xcconfig; sourceTree = "<group>"; };
+		5A82E34C2455D71400EB0A70 /* Base_Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base_Debug.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/Base_Debug.xcconfig; sourceTree = "<group>"; };
+		5A82E34D2455D71400EB0A70 /* Base_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base_Release.xcconfig; path = SwiftProtobufAlias.xcodeproj/xcconfigs/Base_Release.xcconfig; sourceTree = "<group>"; };
 		6583D6E3246E04A200353AF4 /* Test_JSON_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_JSON_Extensions.swift; sourceTree = "<group>"; };
 		8037FC942507E4F4003B7FAC /* unittest_swift_json.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unittest_swift_json.pb.swift; sourceTree = "<group>"; };
 		8DC1CA0C1E54B80800CA8A26 /* MathUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
@@ -802,9 +802,9 @@
 		F41BA4411E7AE53C004F6E95 /* AnyMessageStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyMessageStorage.swift; sourceTree = "<group>"; };
 		F430B11A262764D300C9EE2A /* fuzz_testing.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fuzz_testing.pb.swift; sourceTree = "<group>"; };
 		F430B11B262764D300C9EE2A /* Test_FuzzTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_FuzzTests.swift; sourceTree = "<group>"; };
-		F44F936F1DAEA53900BC5B85 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44F936F1DAEA53900BC5B85 /* SwiftProtobufAlias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobufAlias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44F939F1DAEA7C500BC5B85 /* SwiftProtobufTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProtobufTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F44F93FE1DAEB13F00BC5B85 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44F93FE1DAEB13F00BC5B85 /* SwiftProtobufAlias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobufAlias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44F94341DBF9AEA00BC5B85 /* Test_BasicFields_Access_Proto2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_BasicFields_Access_Proto2.swift; sourceTree = "<group>"; };
 		F44F94381DBFBB6800BC5B85 /* Test_BasicFields_Access_Proto3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_BasicFields_Access_Proto3.swift; sourceTree = "<group>"; };
 		F44F943D1DBFC2CF00BC5B85 /* Test_OneofFields_Access_Proto2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_OneofFields_Access_Proto2.swift; sourceTree = "<group>"; };
@@ -843,8 +843,8 @@
 		F4EDCC2A22DF896500A1ECB7 /* DoubleParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleParser.swift; sourceTree = "<group>"; };
 		F4F4F1161E5633E3006C6CAD /* Test_Naming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_Naming.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		__PBXFileRef_ProtobufTestSuite_Info.plist /* ProtobufTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProtobufTestSuite_Info.plist; path = SwiftProtobuf.xcodeproj/ProtobufTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
-		__PBXFileRef_Protobuf_Info.plist /* Protobuf_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Protobuf_Info.plist; path = SwiftProtobuf.xcodeproj/Protobuf_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_ProtobufTestSuite_Info.plist /* ProtobufTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ProtobufTestSuite_Info.plist; path = SwiftProtobufAlias.xcodeproj/ProtobufTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Protobuf_Info.plist /* Protobuf_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Protobuf_Info.plist; path = SwiftProtobufAlias.xcodeproj/Protobuf_Info.plist; sourceTree = SOURCE_ROOT; };
 		__PBXFileRef_Sources/Protobuf/Google_Protobuf_Duration_Extensions.swift /* Google_Protobuf_Duration+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google_Protobuf_Duration+Extensions.swift"; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/Protobuf/Google_Protobuf_FieldMask_Extensions.swift /* Google_Protobuf_FieldMask+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google_Protobuf_FieldMask+Extensions.swift"; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/Protobuf/Google_Protobuf_Struct.swift /* Google_Protobuf_Struct+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google_Protobuf_Struct+Extensions.swift"; sourceTree = "<group>"; };
@@ -939,8 +939,8 @@
 		__PBXFileRef_Tests/ProtobufTests/unittest_well_known_types.pb.swift /* unittest_well_known_types.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unittest_well_known_types.pb.swift; sourceTree = "<group>"; };
 		"_____Product_ProtobufTestSuite_iOS" /* SwiftProtobufTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProtobufTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_ProtobufTestSuite_macOS" /* SwiftProtobufTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftProtobufTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_Protobuf_iOS" /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_Protobuf_macOS" /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Protobuf_iOS" /* SwiftProtobufAlias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobufAlias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_Protobuf_macOS" /* SwiftProtobufAlias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftProtobufAlias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -948,7 +948,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C8CDA171D7A288E00E207CA /* SwiftProtobuf.framework in Frameworks */,
+				9C8CDA171D7A288E00E207CA /* SwiftProtobufAlias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,7 +956,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44F93A41DAEA7C500BC5B85 /* SwiftProtobuf.framework in Frameworks */,
+				F44F93A41DAEA7C500BC5B85 /* SwiftProtobufAlias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,7 +964,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				_LinkFileRef_Protobuf_via_ProtobufTestSuite /* SwiftProtobuf.framework in Frameworks */,
+				_LinkFileRef_Protobuf_via_ProtobufTestSuite /* SwiftProtobufAlias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,13 +985,13 @@
 		"____Products_" /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"_____Product_Protobuf_macOS" /* SwiftProtobuf.framework */,
+				"_____Product_Protobuf_macOS" /* SwiftProtobufAlias.framework */,
 				"_____Product_ProtobufTestSuite_macOS" /* SwiftProtobufTests.xctest */,
-				"_____Product_Protobuf_iOS" /* SwiftProtobuf.framework */,
+				"_____Product_Protobuf_iOS" /* SwiftProtobufAlias.framework */,
 				"_____Product_ProtobufTestSuite_iOS" /* SwiftProtobufTests.xctest */,
-				F44F936F1DAEA53900BC5B85 /* SwiftProtobuf.framework */,
+				F44F936F1DAEA53900BC5B85 /* SwiftProtobufAlias.framework */,
 				F44F939F1DAEA7C500BC5B85 /* SwiftProtobufTests.xctest */,
-				F44F93FE1DAEB13F00BC5B85 /* SwiftProtobuf.framework */,
+				F44F93FE1DAEB13F00BC5B85 /* SwiftProtobufAlias.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1018,12 +1018,12 @@
 		"_____Sources_" /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				"_______Group_Protobuf" /* SwiftProtobuf */,
+				"_______Group_Protobuf" /* SwiftProtobufAlias */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		"_______Group_Protobuf" /* SwiftProtobuf */ = {
+		"_______Group_Protobuf" /* SwiftProtobufAlias */ = {
 			isa = PBXGroup;
 			children = (
 				F41BA43F1E7AE4AC004F6E95 /* any.pb.swift */,
@@ -1111,7 +1111,7 @@
 				AAEA52731DA80DEA003F318F /* wrappers.pb.swift */,
 				AA28A4A51DA30E5900C866D9 /* ZigZag.swift */,
 			);
-			name = SwiftProtobuf;
+			name = SwiftProtobufAlias;
 			path = Sources/SwiftProtobuf;
 			sourceTree = "<group>";
 		};
@@ -1279,7 +1279,7 @@
 			);
 			name = SwiftProtobuf_iOS;
 			productName = Protobuf_iOS;
-			productReference = "_____Product_Protobuf_iOS" /* SwiftProtobuf.framework */;
+			productReference = "_____Product_Protobuf_iOS" /* SwiftProtobufAlias.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F44F936E1DAEA53900BC5B85 /* SwiftProtobuf_tvOS */ = {
@@ -1294,7 +1294,7 @@
 			);
 			name = SwiftProtobuf_tvOS;
 			productName = SwiftProtobuf_tvOS;
-			productReference = F44F936F1DAEA53900BC5B85 /* SwiftProtobuf.framework */;
+			productReference = F44F936F1DAEA53900BC5B85 /* SwiftProtobufAlias.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F44F939E1DAEA7C500BC5B85 /* SwiftProtobufTestSuite_tvOS */ = {
@@ -1326,7 +1326,7 @@
 			);
 			name = SwiftProtobuf_watchOS;
 			productName = SwiftProtobuf_watchOS;
-			productReference = F44F93FE1DAEB13F00BC5B85 /* SwiftProtobuf.framework */;
+			productReference = F44F93FE1DAEB13F00BC5B85 /* SwiftProtobufAlias.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"______Target_Protobuf" /* SwiftProtobuf_macOS */ = {
@@ -1341,7 +1341,7 @@
 			);
 			name = SwiftProtobuf_macOS;
 			productName = Protobuf;
-			productReference = "_____Product_Protobuf_macOS" /* SwiftProtobuf.framework */;
+			productReference = "_____Product_Protobuf_macOS" /* SwiftProtobufAlias.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"______Target_ProtobufTestSuite" /* SwiftProtobufTestSuite_macOS */ = {
@@ -1398,7 +1398,7 @@
 					};
 				};
 			};
-			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "SwiftProtobuf" */;
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "SwiftProtobufAlias" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2336,7 +2336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		"___RootConfs_" /* Build configuration list for PBXProject "SwiftProtobuf" */ = {
+		"___RootConfs_" /* Build configuration list for PBXProject "SwiftProtobufAlias" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				"_______Debug_" /* Debug */,

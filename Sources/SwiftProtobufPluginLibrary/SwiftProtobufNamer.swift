@@ -1,4 +1,4 @@
-// Sources/SwiftProtobufPluginLibrary/SwiftProtobufNamer.swift - A helper that generates SwiftProtobuf names.
+// Sources/SwiftProtobufPluginLibrary/SwiftProtobufNamer.swift - A helper that generates SwiftProtobufAlias names.
 //
 // Copyright (c) 2014 - 2017 Apple Inc. and the project authors
 // Licensed under Apache License v2.0 with Runtime Library Exception
@@ -8,7 +8,7 @@
 //
 // -----------------------------------------------------------------------------
 ///
-/// A helper that can generate SwiftProtobuf names from types.
+/// A helper that can generate SwiftProtobufAlias names from types.
 ///
 // -----------------------------------------------------------------------------
 

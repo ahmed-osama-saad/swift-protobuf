@@ -18,7 +18,7 @@
 // -----------------------------------------------------------------------------
 
 import Foundation
-import SwiftProtobuf
+import SwiftProtobufAlias
 
 ///
 /// We won't generate types (structs, enums) with these names:
@@ -27,9 +27,9 @@ fileprivate let reservedTypeNames: Set<String> = {
   () -> Set<String> in
   var names: Set<String> = []
 
-  // Main SwiftProtobuf namespace
+  // Main SwiftProtobufAlias namespace
   // Shadowing this leads to Bad Things.
-  names.insert("SwiftProtobuf")
+  names.insert("SwiftProtobufAlias")
 
   // Subtype of many messages, used to scope nested extensions
   names.insert("Extensions")
@@ -217,7 +217,7 @@ fileprivate func sanitizeTypeName(_ s: String, disambiguator: String, forbiddenT
     // like "FooMessage". If it does, and if s is "FooMessage with a
     // disambiguator of "Message", then we want to sanitize on the basis of
     // the suffix rather simply appending the disambiguator.
-    // We use this for module imports that are configurable (like SwiftProtobuf
+    // We use this for module imports that are configurable (like SwiftProtobufAlias
     // renaming).
     return s + disambiguator
   } else {
@@ -582,7 +582,7 @@ public enum NamingUtils {
   }
 
   /// This must be exactly the same as the corresponding code in the
-  /// SwiftProtobuf library.  Changing it will break compatibility of
+  /// SwiftProtobufAlias library.  Changing it will break compatibility of
   /// the generated code with old library version.
   public static func toJsonFieldName(_ s: String) -> String {
     var result = String.UnicodeScalarView()

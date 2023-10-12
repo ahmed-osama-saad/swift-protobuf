@@ -1,4 +1,4 @@
-add_library(SwiftProtobuf
+add_library(SwiftProtobufAlias
   any.pb.swift
   AnyMessageStorage.swift
   AnyUnpackError.swift
@@ -82,17 +82,17 @@ add_library(SwiftProtobuf
   WireFormat.swift
   wrappers.pb.swift
   ZigZag.swift)
-set_target_properties(SwiftProtobuf PROPERTIES
+set_target_properties(SwiftProtobufAlias PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_Swift_MODULE_DIRECTORY})
 
 
-install(TARGETS SwiftProtobuf
+install(TARGETS SwiftProtobufAlias
   ARCHIVE DESTINATION lib/swift$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:_static>/$<LOWER_CASE:${CMAKE_SYSTEM_NAME}>
   LIBRARY DESTINATION lib/swift$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:_static>/$<LOWER_CASE:${CMAKE_SYSTEM_NAME}>
   RUNTIME DESTINATION bin)
 get_swift_host_arch(swift_arch)
 install(FILES
-  $<TARGET_PROPERTY:SwiftProtobuf,Swift_MODULE_DIRECTORY>/SwiftProtobuf.swiftdoc
-  $<TARGET_PROPERTY:SwiftProtobuf,Swift_MODULE_DIRECTORY>/SwiftProtobuf.swiftmodule
+  $<TARGET_PROPERTY:SwiftProtobufAlias,Swift_MODULE_DIRECTORY>/SwiftProtobuf.swiftdoc
+  $<TARGET_PROPERTY:SwiftProtobufAlias,Swift_MODULE_DIRECTORY>/SwiftProtobuf.swiftmodule
   DESTINATION lib/swift$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:_static>/$<LOWER_CASE:${CMAKE_SYSTEM_NAME}>/${swift_arch})
-set_property(GLOBAL APPEND PROPERTY Protobuf_EXPORTS SwiftProtobuf)
+set_property(GLOBAL APPEND PROPERTY Protobuf_EXPORTS SwiftProtobufAlias)

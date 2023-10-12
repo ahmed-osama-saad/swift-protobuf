@@ -14,7 +14,7 @@
 
 import Foundation
 
-private let defaultSwiftProtobufModuleName = "SwiftProtobuf"
+private let defaultSwiftProtobufModuleName = "SwiftProtobufAlias"
 
 /// Handles the mapping of proto files to the modules they will be compiled into.
 public struct ProtoFileToModuleMappings {
@@ -38,7 +38,7 @@ public struct ProtoFileToModuleMappings {
   /// access it to verify things.
   let mappings: [String:String]
 
-  /// The name of the runtime module for SwiftProtobuf (usually "SwiftProtobuf").
+  /// The name of the runtime module for SwiftProtobufAlias (usually "SwiftProtobufAlias").
   /// We expect to find the WKTs in the module named here.
   public let swiftProtobufModuleName: String
 

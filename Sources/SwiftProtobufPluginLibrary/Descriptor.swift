@@ -10,7 +10,7 @@
 ///
 /// This is like Descriptor.{h,cc} in the google/protobuf C++ code, it provides
 /// wrappers around the protos to make a more usable object graph for generation
-/// and also provides some SwiftProtobuf specific additions that would be useful
+/// and also provides some SwiftProtobufAlias specific additions that would be useful
 /// to anyone generating something that uses SwiftProtobufs (like support the
 /// `service` messages). It is *not* the intent for these to eventually be used
 /// as part of some reflection or generate message api.
@@ -27,7 +27,7 @@
 //    as the tracking for weak references wouldn't be needed.
 
 import Foundation
-import SwiftProtobuf
+import SwiftProtobufAlias
 
 public final class DescriptorSet {
   public let files: [FileDescriptor]

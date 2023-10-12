@@ -40,7 +40,7 @@ extension WireFormat {
   /// storage, if preserves any that are length delimited data (since that's
   /// how the message also goes out). While the C++ is parsing, where the
   /// unknowns fall in the flow of the group, sorta decides what happens.
-  /// Since it is ill defined, currently SwiftProtobuf will reflect out
+  /// Since it is ill defined, currently SwiftProtobufAlias will reflect out
   /// anything set in the unknownStorage.  During parsing, unknowns on the
   /// message are preserved, but unknowns within the group are dropped (like
   /// map items).  Any extension in the MessageSet that isn't in the Regisry

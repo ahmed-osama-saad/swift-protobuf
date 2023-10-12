@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------------------
 
 import XCTest
-import SwiftProtobuf
+import SwiftProtobufAlias
 @testable import SwiftProtobufPluginLibrary
 
 class Test_NamingUtils: XCTestCase {
@@ -111,7 +111,7 @@ class Test_NamingUtils: XCTestCase {
       ( "foo_bar", "foo_bar" ),
 
       // Some of our names get the disambiguator added.
-      ( "SwiftProtobuf", "SwiftProtobufMessage" ),
+      ( "SwiftProtobufAlias", "SwiftProtobufMessage" ),
       ( "RenamedSwiftProtobuf", "RenamedSwiftProtobufMessage" ),
       ( "isInitialized", "isInitializedMessage" ),
 
@@ -144,7 +144,7 @@ class Test_NamingUtils: XCTestCase {
       ( "foo_bar", "foo_bar" ),
 
       // Some of our names get the disambiguator added.
-      ( "SwiftProtobuf", "SwiftProtobufEnum" ),
+      ( "SwiftProtobufAlias", "SwiftProtobufEnum" ),
       ( "RenamedSwiftProtobuf", "RenamedSwiftProtobufEnum" ),
       ( "isInitialized", "isInitializedEnum" ),
 

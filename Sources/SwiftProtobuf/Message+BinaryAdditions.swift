@@ -193,7 +193,7 @@ extension Message {
   }
 #endif  // swift(>=5.0)
 
-  // Helper for `merge()`s to keep the Decoder internal to SwiftProtobuf while
+  // Helper for `merge()`s to keep the Decoder internal to SwiftProtobufAlias while
   // allowing the generic over ContiguousBytes to get better codegen from the
   // compiler by being `@inlinable`.
   @usableFromInline

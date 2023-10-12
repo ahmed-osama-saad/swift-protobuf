@@ -809,7 +809,7 @@ message GeneratedSwiftReservedFields {
   int32 subVisitor = 803;
   int32 Swift = 804;
   int32 swiftPrefix = 805;
-  int32 SwiftProtobuf = 806;
+  int32 SwiftProtobufAlias = 806;
   int32 syntax = 807;
   int32 T = 808;
   int32 tag = 809;

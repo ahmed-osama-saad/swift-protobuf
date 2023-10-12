@@ -1,4 +1,4 @@
-// Sources/SwiftProtobufPluginLibrary/LibraryInfo.swift - Helpers info about the SwiftProtobuf library
+// Sources/SwiftProtobufPluginLibrary/LibraryInfo.swift - Helpers info about the SwiftProtobufAlias library
 //
 // Copyright (c) 2014 - 2017 Apple Inc. and the project authors
 // Licensed under Apache License v2.0 with Runtime Library Exception
@@ -8,12 +8,12 @@
 //
 // -----------------------------------------------------------------------------
 ///
-/// Helpers for info about the SwiftProtobuf library itself.
+/// Helpers for info about the SwiftProtobufAlias library itself.
 ///
 // -----------------------------------------------------------------------------
 
 import Foundation
-import SwiftProtobuf
+import SwiftProtobufAlias
 
 /// Scope for helpers about the library.
 public enum SwiftProtobufInfo {

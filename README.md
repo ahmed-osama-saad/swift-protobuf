@@ -20,20 +20,20 @@ files, you will need to add this library to your project.
 [![Check Upstream Protos](https://github.com/apple/swift-protobuf/workflows/Check%20Upstream%20Proto%20Files/badge.svg)](https://github.com/apple/swift-protobuf/actions?query=workflow%3A%22Check+Upstream+Proto+Files%22)
 [![Run Conformance Tests](https://github.com/apple/swift-protobuf/workflows/Run%20Conformance%20Tests/badge.svg)](https://github.com/apple/swift-protobuf/actions?query=workflow%3A%22Run+Conformance+Tests%22)
 
-# Features of SwiftProtobuf
+# Features of SwiftProtobufAlias
 
-SwiftProtobuf offers many advantages over alternative serialization
+SwiftProtobufAlias offers many advantages over alternative serialization
 systems:
 
 * Safety: The protobuf code-generation system avoids the
   errors that are common with hand-built serialization code.
-* Correctness: SwiftProtobuf passes both its own extensive
+* Correctness: SwiftProtobufAlias passes both its own extensive
   test suite and Google's full conformance test for protobuf
   correctness.
 * Schema-driven: Defining your data structures in a separate
   `.proto` schema file clearly documents your communications
   conventions.
-* Idiomatic: SwiftProtobuf takes full advantage of the Swift language.
+* Idiomatic: SwiftProtobufAlias takes full advantage of the Swift language.
   In particular, all generated types provide full Swift copy-on-write
   value semantics.
 * Efficient binary serialization: The `.serializedData()`
@@ -53,7 +53,7 @@ systems:
 Best of all, you can take the same `.proto` file and generate
 Java, C++, Python, or Objective-C for use on other platforms. The
 generated code for those languages will use the exact same
-serialization and deserialization conventions as SwiftProtobuf, making
+serialization and deserialization conventions as SwiftProtobufAlias, making
 it easy to exchange serialized data in binary or JSON forms, with no
 additional effort on your part.
 
@@ -67,13 +67,13 @@ More information is available in the associated documentation:
  * [PLUGIN.md](Documentation/PLUGIN.md) documents the `protoc-gen-swift`
    plugin that adds Swift support to the `protoc` program
  * [API.md](Documentation/API.md) documents how to use the generated code.
-   This is recommended reading for anyone using SwiftProtobuf in their
+   This is recommended reading for anyone using SwiftProtobufAlias in their
    project.
  * [cocoadocs.org](http://cocoadocs.org/docsets/SwiftProtobuf/) has the generated
    API documentation
  * [INTERNALS.md](Documentation/INTERNALS.md) documents the internal structure
    of the generated code and the library.  This
-   should only be needed by folks interested in working on SwiftProtobuf
+   should only be needed by folks interested in working on SwiftProtobufAlias
    itself.
  * [STYLE_GUIDELINES.md](Documentation/STYLE_GUIDELINES.md) documents the style
    guidelines we have adopted in our codebase if you are interested in
@@ -86,7 +86,7 @@ simple: you just need to build the `protoc-gen-swift` program and copy it into
 your PATH.
 The `protoc` program will find and use it automatically, allowing you
 to build Swift sources for your proto files.
-You will also, of course, need to add the SwiftProtobuf runtime library to
+You will also, of course, need to add the SwiftProtobufAlias runtime library to
 your project as explained below.
 
 ## System Requirements
@@ -100,7 +100,7 @@ version of Swift available from [Swift.org](https://swift.org)
 
 * Google's protoc compiler.  The Swift protoc plugin is being actively
 developed and tested against the latest protobuf sources.
-The SwiftProtobuf tests need a version of protoc which supports the
+The SwiftProtobufAlias tests need a version of protoc which supports the
 `swift_prefix` option (introduced in protoc 3.2.0).
 It may work with earlier versions of protoc.
 You can get recent versions from
@@ -109,7 +109,7 @@ You can get recent versions from
 ## Building and Installing the Code Generator Plugin
 
 To translate `.proto` files into Swift, you will need both Google's
-protoc compiler and the SwiftProtobuf code generator plugin.
+protoc compiler and the SwiftProtobufAlias code generator plugin.
 
 Building the plugin should be simple on any supported Swift platform:
 
@@ -118,7 +118,7 @@ $ git clone https://github.com/apple/swift-protobuf.git
 $ cd swift-protobuf
 ```
 
-Pick what released version of SwiftProtobuf you are going to use.  You can get
+Pick what released version of SwiftProtobufAlias you are going to use.  You can get
 a list of tags with:
 
 ```
@@ -171,30 +171,30 @@ file in the output directory.
 More information about building and using `protoc-gen-swift` can be found
 in the [detailed Plugin documentation](Documentation/PLUGIN.md).
 
-## Adding the SwiftProtobuf library to your project...
+## Adding the SwiftProtobufAlias library to your project...
 
-To use the generated code, you need to include the `SwiftProtobuf` library
+To use the generated code, you need to include the `SwiftProtobufAlias` library
 module in your project.  How you do this will vary depending on how
 you're building your project.  Note that in all cases, we strongly recommend
-that you use the version of the SwiftProtobuf library that corresponds to
+that you use the version of the SwiftProtobufAlias library that corresponds to
 the version of `protoc-gen-swift` you used to generate the code.
 
 ### ...using `swift build`
 
 After copying the `.pb.swift` files into your project, you will need to add the
-[SwiftProtobuf library](https://github.com/apple/swift-protobuf) to your
+[SwiftProtobufAlias library](https://github.com/apple/swift-protobuf) to your
 project to support the generated code.
 If you are using the Swift Package Manager, add a dependency to your
-`Package.swift` file and import the `SwiftProtobuf` library into the desired
+`Package.swift` file and import the `SwiftProtobufAlias` library into the desired
 targets.  Adjust the `"1.6.0"` here to match the `[tag_name]` you used to build
 the plugin above:
 
 ```swift
 dependencies: [
-    .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
+    .package(name: "SwiftProtobufAlias", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
 ],
 targets: [
-    .target(name: "MyTarget", dependencies: ["SwiftProtobuf"]),
+    .target(name: "MyTarget", dependencies: ["SwiftProtobufAlias"]),
 ]
 ```
 
@@ -213,7 +213,7 @@ If you're using CocoaPods, add this to your `Podfile` adjusting the `:tag` to
 match the `[tag_name]` you used to build the plugin above:
 
 ```ruby
-pod 'SwiftProtobuf', '~> 1.0'
+pod 'SwiftProtobufAlias', '~> 1.0'
 ```
 
 And run `pod install`.
@@ -228,13 +228,13 @@ If you're using Carthage, add this to your `Cartfile` but adjust the tag to matc
 github "apple/swift-protobuf" ~> 1.0
 ```
 
-Run `carthage update` and drag `SwiftProtobuf.framework` into your Xcode.project.
+Run `carthage update` and drag `SwiftProtobufAlias.framework` into your Xcode.project.
 
 # Quick Start
 
 Once you have installed the code generator, used it to
 generate Swift code from your `.proto` file, and
-added the SwiftProtobuf library to your project, you can
+added the SwiftProtobufAlias library to your project, you can
 just use the generated types as you would any other Swift
 struct.
 

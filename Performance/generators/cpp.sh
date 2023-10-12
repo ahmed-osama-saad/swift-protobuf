@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SwiftProtobuf/Performance/generators/cpp.sh - C++ test harness generator
+# SwiftProtobufAlias/Performance/generators/cpp.sh - C++ test harness generator
 #
 # This source file is part of the Swift.org open source project
 #

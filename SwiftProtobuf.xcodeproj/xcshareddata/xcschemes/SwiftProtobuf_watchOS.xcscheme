@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F44F93FD1DAEB13F00BC5B85"
-               BuildableName = "SwiftProtobuf.framework"
+               BuildableName = "SwiftProtobufAlias.framework"
                BlueprintName = "SwiftProtobuf_watchOS"
-               ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+               ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44F93FD1DAEB13F00BC5B85"
-            BuildableName = "SwiftProtobuf.framework"
+            BuildableName = "SwiftProtobufAlias.framework"
             BlueprintName = "SwiftProtobuf_watchOS"
-            ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+            ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -60,9 +60,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F44F93FD1DAEB13F00BC5B85"
-            BuildableName = "SwiftProtobuf.framework"
+            BuildableName = "SwiftProtobufAlias.framework"
             BlueprintName = "SwiftProtobuf_watchOS"
-            ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+            ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -810,7 +810,7 @@ enum GeneratedSwiftReservedEnum {
   subVisitor = 803;
   Swift = 804;
   swiftPrefix = 805;
-  SwiftProtobuf = 806;
+  SwiftProtobufAlias = 806;
   syntax = 807;
   T = 808;
   tag = 809;

@@ -66,7 +66,7 @@ CONFORMANCE_TEST_RUNNER?=${GOOGLE_PROTOBUF_CHECKOUT}/conformance_test_runner
 
 # The directories within Protos/ with the exception of "upstream". Use for the
 # maintenance of the 'Reference' target and test-plugin.
-PROTOS_DIRS=Conformance protoc-gen-swiftTests SwiftProtobuf SwiftProtobufPluginLibrary SwiftProtobufPluginLibraryTests SwiftProtobufTests
+PROTOS_DIRS=Conformance protoc-gen-swiftTests SwiftProtobufAlias SwiftProtobufPluginLibrary SwiftProtobufPluginLibraryTests SwiftProtobufTests
 
 .PHONY: \
 	all \
@@ -349,7 +349,7 @@ Tests/protoc-gen-swiftTests/DescriptorTestData.swift: build ${PROTOC_GEN_SWIFT} 
 	@echo 'let fileDescriptorSetData = Data(fileDescriptorSetBytes)' >> $@
 
 #
-# Collect a list of words that appear in the SwiftProtobuf library
+# Collect a list of words that appear in the SwiftProtobufAlias library
 # source.  These are words that may cause problems for generated code.
 #
 # The logic here builds a word list as follows:
@@ -526,7 +526,7 @@ test-xcode-release: test-xcode-iOS-release test-xcode-macOS-release test-xcode-t
 # The individual ones
 
 test-xcode-iOS-debug:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_iOS \
 		-configuration Debug \
 		-destination "platform=iOS Simulator,name=iPhone 8,OS=latest" \
@@ -536,7 +536,7 @@ test-xcode-iOS-debug:
 # Release defaults to not supporting testing, so add ENABLE_TESTABILITY=YES
 # to ensure the main library gets testing support.
 test-xcode-iOS-release:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_iOS \
 		-configuration Release \
 		-destination "platform=iOS Simulator,name=iPhone 8,OS=latest" \
@@ -544,7 +544,7 @@ test-xcode-iOS-release:
 		test ENABLE_TESTABILITY=YES $(XCODEBUILD_EXTRAS)
 
 test-xcode-macOS-debug:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_macOS \
 		-configuration Debug \
 		build test $(XCODEBUILD_EXTRAS)
@@ -552,13 +552,13 @@ test-xcode-macOS-debug:
 # Release defaults to not supporting testing, so add ENABLE_TESTABILITY=YES
 # to ensure the main library gets testing support.
 test-xcode-macOS-release:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_macOS \
 		-configuration Release \
 		build test ENABLE_TESTABILITY=YES $(XCODEBUILD_EXTRAS)
 
 test-xcode-tvOS-debug:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_tvOS \
 		-configuration Debug \
 		-destination "platform=tvOS Simulator,name=Apple TV,OS=latest" \
@@ -567,7 +567,7 @@ test-xcode-tvOS-debug:
 # Release defaults to not supporting testing, so add ENABLE_TESTABILITY=YES
 # to ensure the main library gets testing support.
 test-xcode-tvOS-release:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_tvOS \
 		-configuration Release \
 		-destination "platform=tvOS Simulator,name=Apple TV,OS=latest" \
@@ -575,14 +575,14 @@ test-xcode-tvOS-release:
 
 # watchOS doesn't support tests, just do a build.
 test-xcode-watchOS-debug:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_watchOS \
 		-configuration Debug \
 		build $(XCODEBUILD_EXTRAS)
 
 # watchOS doesn't support tests, just do a build.
 test-xcode-watchOS-release:
-	xcodebuild -project SwiftProtobuf.xcodeproj \
+	xcodebuild -project SwiftProtobufAlias.xcodeproj \
 		-scheme SwiftProtobuf_watchOS \
 		-configuration Release \
 		build $(XCODEBUILD_EXTRAS)

@@ -6,23 +6,23 @@ import PackageDescription
 let package = Package(
     name: "FuzzTesting",
     dependencies: [
-        .package(name: "SwiftProtobuf", path: ".."),
+        .package(name: "SwiftProtobufAlias", path: ".."),
     ],
     targets: [
         .target(
             name: "FuzzCommon",
-            dependencies: ["SwiftProtobuf"]),
+            dependencies: ["SwiftProtobufAlias"]),
         .target(
             name: "FuzzBinary",
-            dependencies: ["SwiftProtobuf", "FuzzCommon"]),
+            dependencies: ["SwiftProtobufAlias", "FuzzCommon"]),
         .target(
             name: "FuzzBinaryDelimited",
-            dependencies: ["SwiftProtobuf", "FuzzCommon"]),
+            dependencies: ["SwiftProtobufAlias", "FuzzCommon"]),
         .target(
             name: "FuzzJSON",
-            dependencies: ["SwiftProtobuf", "FuzzCommon"]),
+            dependencies: ["SwiftProtobufAlias", "FuzzCommon"]),
         .target(
             name: "FuzzTextFormat",
-            dependencies: ["SwiftProtobuf", "FuzzCommon"]),
+            dependencies: ["SwiftProtobufAlias", "FuzzCommon"]),
     ]
 )

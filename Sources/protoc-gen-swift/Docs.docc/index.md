@@ -114,7 +114,7 @@ The possible values for `FileNaming` are:
 
 ##### Generation Option: `Visibility` - Visibility of Generated Types
 
-By default, SwiftProtobuf does not specify a visibility for the
+By default, SwiftProtobufAlias does not specify a visibility for the
 generated types, methods, and properties.  As a result, these will end
 up with the default (`internal`) access.  You can change this with the
 `Visibility` option:
@@ -192,7 +192,7 @@ this will only work if the `Visibility` is set to `internal`.
 
 After copying the `.pb.swift` files into your project, you will need
 to add the
-[SwiftProtobuf library](https://github.com/apple/swift-protobuf) to
+[SwiftProtobufAlias library](https://github.com/apple/swift-protobuf) to
 your project to support the generated code.  If you are using the
 Swift Package Manager, you should first check what version of
 `protoc-gen-swift` you are currently using:
@@ -208,7 +208,7 @@ above:
 
 ```swift
 dependencies: [
-    .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
+    .package(name: "SwiftProtobufAlias", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
 ]
 ```
 
@@ -234,7 +234,7 @@ produce one or more source code files
 that `protoc` will then save to the correct output location.
 
 The `protoc-gen-swift` program relies heavily
-on the `SwiftProtobuf` library to handle serializing and
+on the `SwiftProtobufAlias` library to handle serializing and
 deserializing the protobuf-encoded data used to
 communicate with `protoc`.
 It also relies on another library called `SwiftProtobufPluginLibrary`

@@ -16,7 +16,7 @@
 
 import Foundation
 import SwiftProtobufPluginLibrary
-import SwiftProtobuf
+import SwiftProtobufAlias
 
 class MessageGenerator {
   private let descriptor: Descriptor
@@ -125,7 +125,7 @@ class MessageGenerator {
         "\(visibility)struct \(swiftRelativeName)\(conformances) {\n")
     p.indent()
     p.print("// \(namer.swiftProtobufModuleName).Message conformance is added in an extension below. See the\n",
-            "// `Message` and `Message+*Additions` files in the SwiftProtobuf library for\n",
+            "// `Message` and `Message+*Additions` files in the SwiftProtobufAlias library for\n",
             "// methods supported on all messages.\n")
 
     for f in fields {

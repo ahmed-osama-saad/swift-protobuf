@@ -567,7 +567,7 @@ class Test_AllTypes_Proto3_Optional: XCTestCase, PBTestHelpers {
     }
 
   func testEncoding_optionalCord() {
-      // The `ctype = CORD` option has no meaning in SwiftProtobuf,
+      // The `ctype = CORD` option has no meaning in SwiftProtobufAlias,
       // but test is for completeness.
       assertEncode([130, 1, 0]) {(o: inout MessageTestType) in o.optionalCord = ""}
       assertDecodeSucceeds([130, 1, 0]) { $0.hasOptionalCord && $0.optionalCord == "" }
@@ -631,7 +631,7 @@ class Test_AllTypes_Proto3_Optional: XCTestCase, PBTestHelpers {
     }
 
   func testEncoding_lazyNestedMessage() {
-      // The `lazy = true` option has no meaning in SwiftProtobuf,
+      // The `lazy = true` option has no meaning in SwiftProtobufAlias,
       // but test is for completeness.
       assertEncode([154, 1, 0]) {(o: inout MessageTestType) in
           o.lazyNestedMessage = MessageTestType.NestedMessage()

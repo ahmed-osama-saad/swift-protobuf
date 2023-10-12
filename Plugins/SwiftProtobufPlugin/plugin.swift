@@ -99,7 +99,7 @@ struct SwiftProtobufPlugin {
         /// If this is not set, SPM will try to find the tool itself.
         var protocPath: String?
 
-        /// A list of invocations of `protoc` with the `SwiftProtobuf` plugin.
+        /// A list of invocations of `protoc` with the `SwiftProtobufAlias` plugin.
         var invocations: [Invocation]
     }
 

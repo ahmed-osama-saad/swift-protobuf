@@ -12,10 +12,10 @@
 import PackageDescription
 
 let package = Package(
-  name: "SwiftProtobuf",
+  name: "SwiftProtobufAlias",
   products: [
     .executable(name: "protoc-gen-swift", targets: ["protoc-gen-swift"]),
-    .library(name: "SwiftProtobuf", targets: ["SwiftProtobuf"]),
+    .library(name: "SwiftProtobufAlias", targets: ["SwiftProtobufAlias"]),
     .library(name: "SwiftProtobufPluginLibrary", targets: ["SwiftProtobufPluginLibrary"]),
     .plugin(
         name: "SwiftProtobufPlugin",
@@ -23,13 +23,13 @@ let package = Package(
     ),
   ],
   targets: [
-    .target(name: "SwiftProtobuf"),
+    .target(name: "SwiftProtobufAlias"),
     .target(name: "SwiftProtobufPluginLibrary",
-            dependencies: ["SwiftProtobuf"]),
+            dependencies: ["SwiftProtobufAlias"]),
     .executableTarget(name: "protoc-gen-swift",
-            dependencies: ["SwiftProtobufPluginLibrary", "SwiftProtobuf"]),
+            dependencies: ["SwiftProtobufPluginLibrary", "SwiftProtobufAlias"]),
     .executableTarget(name: "Conformance",
-            dependencies: ["SwiftProtobuf"]),
+            dependencies: ["SwiftProtobufAlias"]),
     .plugin(
         name: "SwiftProtobufPlugin",
         capability: .buildTool(),
@@ -38,7 +38,7 @@ let package = Package(
         ]
     ),
     .testTarget(name: "SwiftProtobufTests",
-                dependencies: ["SwiftProtobuf"]),
+                dependencies: ["SwiftProtobufAlias"]),
     .testTarget(name: "SwiftProtobufPluginLibraryTests",
                 dependencies: ["SwiftProtobufPluginLibrary"]),
   ],

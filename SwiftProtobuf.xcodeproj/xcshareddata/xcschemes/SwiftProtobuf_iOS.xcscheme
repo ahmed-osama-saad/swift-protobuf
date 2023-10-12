@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BD12FD351D767BA0001815C7"
-               BuildableName = "SwiftProtobuf.framework"
+               BuildableName = "SwiftProtobufAlias.framework"
                BlueprintName = "SwiftProtobuf_iOS"
-               ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+               ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD12FD351D767BA0001815C7"
-            BuildableName = "SwiftProtobuf.framework"
+            BuildableName = "SwiftProtobufAlias.framework"
             BlueprintName = "SwiftProtobuf_iOS"
-            ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+            ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -44,7 +44,7 @@
                BlueprintIdentifier = "9C8CDA111D7A288E00E207CA"
                BuildableName = "SwiftProtobufTests.xctest"
                BlueprintName = "SwiftProtobufTestSuite_iOS"
-               ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+               ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD12FD351D767BA0001815C7"
-            BuildableName = "SwiftProtobuf.framework"
+            BuildableName = "SwiftProtobufAlias.framework"
             BlueprintName = "SwiftProtobuf_iOS"
-            ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+            ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD12FD351D767BA0001815C7"
-            BuildableName = "SwiftProtobuf.framework"
+            BuildableName = "SwiftProtobufAlias.framework"
             BlueprintName = "SwiftProtobuf_iOS"
-            ReferencedContainer = "container:SwiftProtobuf.xcodeproj">
+            ReferencedContainer = "container:SwiftProtobufAlias.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

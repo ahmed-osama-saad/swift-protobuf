@@ -54,7 +54,7 @@ When doing a release:
       directory:
 
       ```
-      $ pod spec lint SwiftProtobuf.podspec
+      $ pod spec lint SwiftProtobufAlias.podspec
       ```
 
       _Note:_ This uses that local copy of the podspec, but pulls the code off the tag on github.
@@ -70,7 +70,7 @@ When doing a release:
    1. Publish the pod:
 
       ```
-      $ pod trunk push SwiftProtobuf.podspec
+      $ pod trunk push SwiftProtobufAlias.podspec
       ```
 
       _Note:_ This uses that local copy of the podspec.

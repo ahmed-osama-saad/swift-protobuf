@@ -111,7 +111,7 @@ The possible values for `FileNaming` are:
 
 ##### Generation Option: `Visibility` - Visibility of Generated Types
 
-By default, SwiftProtobuf does not specify a visibility for the
+By default, SwiftProtobufAlias does not specify a visibility for the
 generated types, methods, and properties.  As a result, these will end
 up with the default (`internal`) access.  You can change this with the
 `Visibility` option:
@@ -166,7 +166,7 @@ The `proto_file_path` values here should match the paths used in the proto file
 
 ##### Generation Option: `ImplementationOnlyImports` - `@_implementationOnly`-annotated imports
 
-By default, SwiftProtobuf does not annotate any imports with `@_implementationOnly`.
+By default, SwiftProtobufAlias does not annotate any imports with `@_implementationOnly`.
 However, in some scenarios, such as when distributing an `XCFramework`, imports 
 for types used only internally should be annotated as `@_implementationOnly` to 
 avoid exposing internal symbols to clients.
@@ -191,7 +191,7 @@ this will only work if the `Visibility` is set to `internal`.
 
 After copying the `.pb.swift` files into your project, you will need
 to add the
-[SwiftProtobuf library](https://github.com/apple/swift-protobuf) to
+[SwiftProtobufAlias library](https://github.com/apple/swift-protobuf) to
 your project to support the generated code.  If you are using the
 Swift Package Manager, you should first check what version of
 `protoc-gen-swift` you are currently using:
@@ -207,7 +207,7 @@ above:
 
 ```swift
 dependencies: [
-    .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
+    .package(name: "SwiftProtobufAlias", url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0"),
 ]
 ```
 
@@ -215,7 +215,7 @@ If you are using Xcode, then you should:
 
 * Add the Swift source files generated from your protos directly to your
   project.
-* Clone the SwiftProtobuf package.
-* Add the SwiftProtobuf target from the Xcode project from that package to your
+* Clone the SwiftProtobufAlias package.
+* Add the SwiftProtobufAlias target from the Xcode project from that package to your
   project.
 

@@ -20,7 +20,7 @@
 // -----------------------------------------------------------------------------
 
 import Foundation
-import SwiftProtobuf
+import SwiftProtobufAlias
 import SwiftProtobufPluginLibrary
 
 extension Google_Protobuf_Compiler_Version {
@@ -85,7 +85,7 @@ struct GeneratorPlugin {
     print(Version.copyright)
     print("")
 
-    let version = SwiftProtobuf.Version.self
+    let version = SwiftProtobufAlias.Version.self
     let packageVersion = "\(version.major),\(version.minor),\(version.revision)"
 
     let help = (
@@ -99,14 +99,14 @@ struct GeneratorPlugin {
         + "In particular, if you have renamed this program, you will need to\n"
         + "adjust the protoc command-line option accordingly.\n"
         + "\n"
-        + "The generated Swift output requires the SwiftProtobuf \(SwiftProtobuf.Version.versionString)\n"
+        + "The generated Swift output requires the SwiftProtobufAlias \(SwiftProtobufAlias.Version.versionString)\n"
         + "library be included in your project.\n"
         + "\n"
         + "If you use `swift build` to compile your project, add this to\n"
         + "Package.swift:\n"
         + "\n"
         + "   dependencies: [\n"
-        + "     .package(name: \"SwiftProtobuf\", url: \"https://github.com/apple/swift-protobuf.git\", from: \"\(packageVersion)\"),"
+        + "     .package(name: \"SwiftProtobufAlias\", url: \"https://github.com/apple/swift-protobuf.git\", from: \"\(packageVersion)\"),"
         + "   ]\n"
         + "\n"
         + "\n"
@@ -128,7 +128,7 @@ struct GeneratorPlugin {
   }
 
   private func showVersion() {
-    print("\(CommandLine.programName) \(SwiftProtobuf.Version.versionString)")
+    print("\(CommandLine.programName) \(SwiftProtobufAlias.Version.versionString)")
   }
 
   private func generateFromStdin() -> Int32 {

@@ -14,7 +14,7 @@
 // -----------------------------------------------------------------------------
 
 import SwiftProtobufPluginLibrary
-import SwiftProtobuf
+import SwiftProtobufAlias
 
 extension Google_Protobuf_FileDescriptorProto {
   // Field numbers used to collect .proto file comments.

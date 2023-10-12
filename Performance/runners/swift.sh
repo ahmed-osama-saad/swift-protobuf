@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SwiftProtobuf/Performance/runners/swift.sh - Swift test harness runner
+# SwiftProtobufAlias/Performance/runners/swift.sh - Swift test harness runner
 #
 # This source file is part of the Swift.org open source project
 #
@@ -49,7 +49,7 @@ function run_swift_harness() {
     # Build the dynamic library to use in the tests.
     # TODO: Make the dylib a product again in the package manifest and just use
     # that.
-    echo "Building SwiftProtobuf dynamic library..."
+    echo "Building SwiftProtobufAlias dynamic library..."
     ${XCRUN} "${SWIFTC}" -emit-library -emit-module -O -wmo \
         -o "$perf_dir/_generated/libSwiftProtobuf.dylib" \
         ${OTHER_SWIFT_FLAGS:-} \

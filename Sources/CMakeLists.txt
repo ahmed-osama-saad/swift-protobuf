@@ -1,3 +1,3 @@
-add_subdirectory(SwiftProtobuf)
+add_subdirectory(SwiftProtobufAlias)
 add_subdirectory(SwiftProtobufPluginLibrary)
 add_subdirectory(protoc-gen-swift)

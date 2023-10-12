@@ -17,7 +17,7 @@ add_library(SwiftProtobufPluginLibrary
   swift_protobuf_module_mappings.pb.swift
   UnicodeScalar+Extensions.swift)
 target_link_libraries(SwiftProtobufPluginLibrary PUBLIC
-  SwiftProtobuf)
+  SwiftProtobufAlias)
 
 
 install(TARGETS SwiftProtobufPluginLibrary

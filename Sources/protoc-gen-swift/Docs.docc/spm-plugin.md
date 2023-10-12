@@ -1,7 +1,7 @@
 # Using the Swift Package Manager plugin
 
 The Swift Package Manager introduced new plugin capabilities in Swift 5.6, enabling the extension of
-the build process with custom build tools. Learn how to use the SwiftProtobuf plugin for the
+the build process with custom build tools. Learn how to use the SwiftProtobufAlias plugin for the
 Swift Package Manager.
 
 ## Overview

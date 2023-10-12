@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------------------
 
 
-/// SwiftProtobuf Internal: Common support looking up field names.
+/// SwiftProtobufAlias Internal: Common support looking up field names.
 ///
 /// Messages conform to this protocol to provide the proto/text and JSON field
 /// names for their fields. This allows these names to be pulled out into
